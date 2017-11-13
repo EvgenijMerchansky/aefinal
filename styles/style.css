@@ -1,0 +1,51 @@
+#error-block {
+    color: crimson;
+    max-height: 25px;
+    display: block;
+    width: 100%;
+    background-color: white;
+    margin-top: -3px;
+    text-align: center;
+}
+
+.company-title {
+    position: relative;
+    color: #ee9230;
+}
+
+.company-title:hover {
+    color: #c07422;
+}
+
+.company-logo {
+    position: absolute;
+    left: 29%;
+    top: 1%;
+}
+
+#comment {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    color: #848484;
+    border: solid 1px #ccc;
+}
+
+input:hover {
+    border: solid 1px #2a613a;
+}
+
+input{
+    padding: 0 5px;
+}
+
+td input:focus{
+    color: #000;
+}
+
+td {
+    padding: 0!important;
+    width: 300px;
+}

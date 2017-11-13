@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get data REST (MVC)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/toolbar.css">
+</head>
+<body>
+    <div class="container custom-container">
+        <div class="custom-container__title">
+            <img src="images/ae.png" width="50" height="50" class="company-logo">
+            <h1 class="company-title">Agile Engine</h1>
+        </div>
+        <form class="custom-container__form" id="form">
+            <label for="name">USER name:</label>
+            <input name="inp" type="text" class="custom-container__form-name" id="name"/><br/>
+            <label for="lname">USER LASTNAME:</label>
+            <input name="inp" type="text" class="custom-container__form-lname" id="lname"/><br/>
+            <label for="age">USER AGE:</label>
+            <input name="inp" type="number" class="custom-container__form-age" id="age"/><br/>
+            <label for="comment">USER COMMENT:</label>
+            <input name="inp" type="text" class="custom-container__form-comment" id="comment"/><br/>
+            <button id="send-data" type="submit">Add data</button><br/>
+        </form>
+        <div class="editor-title">
+            Editor
+        </div>
+        <div class="toolbar">
+            <div id="error-block">
+
+            </div>
+            <button
+                    class="interface-btn"
+                    title="Merge group rows"
+            >
+                <i class="fa fa-th-large">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Delete bunch of rows"
+            >
+                <i class="fa fa-times">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Align center"
+            >
+                <i class="fa fa-align-center">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Align justify"
+            >
+                <i class="fa fa-align-justify">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Align left"
+            >
+                <i class="fa fa-align-left">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Align right"
+            >
+                <i class="fa fa-align-right">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Formatting for rows/columns"
+            >
+                <i class="fa fa-list-alt">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Font"
+            >
+                <i class="fa fa-font">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Font size"
+            >
+            <i class="fa fa-text-height"></i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Bold text"
+            >
+                <i class="fa fa-bold"></i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Italic text"
+            >
+                <i class="fa fa-italic">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Underline text"
+            >
+                <i class="fa fa-underline">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Zoom in"
+            >
+                <i class="fa fa-search-plus">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Zoom out"
+            >
+                <i class="fa fa-search-minus">
+
+                </i>
+            </button>
+            <button
+                    class="interface-btn"
+                    title="Print"
+            >
+                <i class="fa fa-print">
+
+                </i>
+            </button>
+        </div>
+        
+
+        <table class="table">
+            <tbody id="app-child">
+                <tr class="interface-row" id="interface-row">
+                    <td>
+                        <button
+                            data-id="name"
+                            data-index="0"
+                            class="sorting-name table-btn"
+                        >
+                        name
+                        </button>
+                    </td>
+                    <td>
+                        <button
+                            data-id="lname"
+                            data-index="1"
+                            class="sorting-lname table-btn"
+                        >
+                        Last name
+                        </button>
+                    </td>
+                    <td>
+                        <button
+                            data-id="age"
+                            data-index="2"
+                            class="sorting-age table-btn"
+                        >
+                        Age
+                        </button>
+                    </td>
+                    <td>
+                        <button
+                            data-id="comment"
+                            data-index="3"
+                            class="sorting-comment table-btn"
+                        >
+                        Comment
+                        </button>
+                    </td>
+                    <td>
+                        <button
+                            data-id="id"
+                            data-index="4"
+                            class="sorting-id table-btn"
+                        >
+                            ID
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<script src="dist/app.js"></script>
+<script type="text/javascript" src="/dist/app.js"></script></body>
+</html>

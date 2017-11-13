@@ -1,0 +1,69 @@
+* {
+    transition: all .25s;
+}
+
+.toolbar {
+    display: flex;
+    margin-bottom: -1px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: #347447;
+    border: solid 1px #347447;
+}
+
+button {
+    background-color: #347447;
+    align-items: stretch;
+    display: block;
+    flex-basis: 6%;
+    /*width: auto;*/
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 14px;
+}
+
+td button {
+    width: 100%;
+}
+
+.interface-btn:focus {
+    background-color: #2a613a;
+    color: white;
+}
+
+.custom {
+    width: 91px!important;
+}
+
+button:hover {
+    background-color: #2a613a;
+    color: #fff;
+}
+
+button:focus {
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+.interface-row td {
+    padding: 0;
+}
+
+.editor-title {
+    display: block;
+    text-align: center;
+    color: #347447;
+    border: solid 1px #347447;
+}
+
+.editor-title:hover {
+    color: #2a613a;
+    border: solid 1px #2a613a;
+}

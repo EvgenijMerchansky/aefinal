@@ -1,0 +1,25 @@
+{
+  "name": "datamvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress",
+    "build": "webpack -w"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2017": "^6.24.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "author": "pCat",
+  "license": "ISC",
+  "dependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.12.4",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.9.3"
+  }
+}
